@@ -1,103 +1,261 @@
 *{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
 
 body{
-  font-family:Arial, sans-serif;
-  min-height:100vh;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  background:linear-gradient(to bottom,#e8f5e9,#c8e6c9);
+font-family:Arial, sans-serif;
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:linear-gradient(to bottom,#e8f5e9,#c8e6c9);
 }
 
+/* ======================
+CONTENT
+====================== */
+
 .content{
-  width:100%;
-  max-width:700px;
-  padding:40px 20px;
-  text-align:center;
+width:100%;
+max-width:700px;
+padding:40px 20px;
+text-align:center;
 }
 
 h1,h2,p{
-  background:rgba(255,255,255,0.95);
-  padding:15px;
-  border-radius:15px;
-  margin-bottom:20px;
+background:rgba(255,255,255,0.95);
+padding:15px;
+border-radius:15px;
+margin-bottom:20px;
 }
+
+/* ======================
+INPUTS
+====================== */
 
 input{
-  padding:10px;
-  margin:10px 0;
-  width:100%;
-  max-width:300px;
-  border-radius:8px;
-  border:1px solid #ccc;
+padding:10px;
+margin:10px 0;
+width:100%;
+max-width:300px;
+border-radius:8px;
+border:1px solid #ccc;
+font-size:16px;
 }
 
+/* ======================
+BOUTONS
+====================== */
+
 button{
-  padding:12px 25px;
-  margin:8px 0;
-  width:100%;
-  max-width:300px;
-  border:none;
-  border-radius:10px;
-  background:#4CAF50;
-  color:white;
-  font-size:16px;
-  cursor:pointer;
+padding:12px 25px;
+margin:8px 0;
+width:100%;
+max-width:300px;
+border:none;
+border-radius:10px;
+background:#4CAF50;
+color:white;
+font-size:16px;
+cursor:pointer;
+transition:0.2s;
 }
 
 button:hover{
-  background:#388e3c;
+background:#388e3c;
+transform:scale(1.03);
 }
 
+/* ======================
+RESULT PAGE
+====================== */
+
 .plant{
-  width:150px;
-  margin:20px auto;
-  display:block;
+width:150px;
+margin:20px auto;
+display:block;
 }
 
 .result-box{
-  background:white;
-  padding:25px;
-  border-radius:20px;
-  box-shadow:0 10px 30px rgba(0,0,0,0.1);
+background:white;
+padding:25px;
+border-radius:20px;
+box-shadow:0 10px 30px rgba(0,0,0,0.1);
 }
 
+/* ======================
+SCENE
+====================== */
+
 .scene{
-  text-align:center;
+text-align:center;
 }
 
 .circle{
-  position:relative;
-  width:500px;
-  height:500px;
-  margin:20px auto;
-  border-radius:50%;
-  border:3px dashed #4CAF50;
+position:relative;
+width:500px;
+height:500px;
+margin:20px auto;
+border-radius:50%;
+border:3px dashed #4CAF50;
 }
 
 .circle img{
-  position:absolute;
-  width:80px;
-  cursor:pointer;
+position:absolute;
+width:80px;
+cursor:pointer;
 }
 
+/* ======================
+ACTIVITÉS
+====================== */
+
+.activities{
+
+position:absolute;
+top:120px;
+left:40px;
+
+width:280px;
+
+background:white;
+
+padding:20px;
+
+border-radius:15px;
+
+box-shadow:0 5px 15px rgba(0,0,0,0.15);
+
+z-index:10;
+}
+
+.activity{
+padding:8px;
+border-bottom:1px solid #ddd;
+font-size:14px;
+}
+
+/* ======================
+CHAT TWITCH STYLE
+====================== */
+
 .chat{
-  margin-top:20px;
-  background:white;
-  padding:15px;
-  border-radius:15px;
-  max-width:500px;
-  margin-left:auto;
-  margin-right:auto;
+
+position:fixed;
+
+right:0;
+top:0;
+
+width:260px;
+height:100vh;
+
+display:flex;
+flex-direction:column;
+
+background:rgba(255,255,255,0.25);
+
+backdrop-filter:blur(6px);
+
+padding:15px;
+
 }
 
 #messages{
-  height:150px;
-  overflow-y:auto;
-  text-align:left;
-  margin-bottom:10px;
+
+flex:1;
+
+overflow-y:auto;
+
+padding-right:5px;
+
+}
+
+#messages p{
+
+background:rgba(255,255,255,0.5);
+
+padding:8px;
+
+border-radius:10px;
+
+margin-bottom:6px;
+
+font-size:14px;
+
+}
+
+.chat-input{
+
+display:flex;
+flex-direction:column;
+
+}
+
+.chat input{
+
+padding:8px;
+border-radius:8px;
+border:1px solid #ccc;
+margin-bottom:5px;
+
+}
+
+.chat button{
+
+padding:8px;
+border-radius:8px;
+border:none;
+background:#4CAF50;
+color:white;
+cursor:pointer;
+
+}
+
+/* ======================
+TUTORIEL
+====================== */
+
+.tutorial{
+
+position:fixed;
+top:0;
+left:0;
+
+width:100%;
+height:100%;
+
+background:rgba(0,0,0,0.4);
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+z-index:999;
+
+}
+
+.tutorial-box{
+
+background:white;
+
+padding:30px;
+
+border-radius:20px;
+
+max-width:400px;
+
+text-align:center;
+
+}
+
+/* highlight sans déplacer */
+
+.highlight{
+
+box-shadow:0 0 0 5px #4CAF50, 0 0 25px #4CAF50;
+
+border-radius:20px;
+
 }
