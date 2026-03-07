@@ -5,21 +5,70 @@
 <title>La Ville Santé</title>
 <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
 <div class="scene">
+
 <h2>🌿 Ville : <span id="cityName"></span></h2>
 
 <div class="circle" id="circle"></div>
 
+</div>
+
+
+<!-- ACTIVITÉS -->
+
+<div class="activities" id="activities">
+
+<h3>📅 Activités proposées</h3>
+
+<div id="activityList"></div>
+
+<h4>Proposer une activité</h4>
+
+<input id="actTitle" placeholder="Type d'activité (sport, marche...)">
+<input id="actTime" placeholder="Heure">
+<input id="actPlace" placeholder="Lieu">
+
+<button onclick="addActivity()">Créer l'activité</button>
+
+</div>
+
+
+<!-- CHAT STYLE TWITCH -->
+
 <div class="chat">
+
 <div id="messages"></div>
+
+<div class="chat-input">
+
 <input id="msgInput" placeholder="Message collectif">
+
 <button onclick="send()">Envoyer</button>
+
+</div>
+
+</div>
+
+
+<!-- TUTORIEL -->
+
+<div id="tutorial" class="tutorial">
+
+<div class="tutorial-box">
+
+<h2 id="tutoTitle"></h2>
+<p id="tutoText"></p>
+
+<button onclick="nextTutorial()">Suivant</button>
+
 </div>
 
 </div>
 
 <script src="js/scene.js"></script>
+
 </body>
 </html>
