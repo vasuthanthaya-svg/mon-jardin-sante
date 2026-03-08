@@ -16,8 +16,7 @@ const types = [
 "arbre",
 "chene",
 "cactus",
-"palmier",
-"champignon"
+"palmier"
 ];
 
 function createPlant(type,x,y){
@@ -183,7 +182,7 @@ highlight:"circle"
 
 {
 title:"👥 Profils",
-text:"Cliquez sur une plante pour voir le profil d'une personne."
+text:"Cliquez sur une plante pour voir le profil d'une personne et la contacter en message privé."
 },
 
 {
